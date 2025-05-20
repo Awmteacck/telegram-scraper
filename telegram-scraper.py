@@ -47,9 +47,9 @@ def save_state(state):
 state = load_state()
 
 if not state['api_id'] or not state['api_hash'] or not state['phone']:
-    state['api_id'] = int(input("Enter your API ID: "))
-    state['api_hash'] = input("Enter your API Hash: ")
-    state['phone'] = input("Enter your phone number: ")
+    state['api_id'] = int(input("22658021: "))
+    state['api_hash'] = input("6da533e7c45bc668182b5a0f5a4497dd: ")
+    state['phone'] = input("+918787651195: ")
     save_state(state)
 
 client = TelegramClient('session', state['api_id'], state['api_hash'])
